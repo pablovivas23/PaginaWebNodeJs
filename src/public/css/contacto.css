@@ -1,0 +1,33 @@
+form{
+	width: 25%;
+	border:1px solid grey;
+	margin:20px;
+	padding: 20px;
+}
+label{
+	font-size: 12px;
+	display: block;
+	width: 100%;
+}
+input,textarea{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border:1px solid grey0;
+}
+
+input:focus{
+	border:1px solid grey;
+}
+
+input[type="submit"]{
+	margin-bottom: 0px;
+	background: blue;
+	color:black;
+	border:none;
+}
+input[type="submit"]{
+	background:white;
+	cursor: pointer; 
+}

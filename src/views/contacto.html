@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Contacto</title>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" href="css/contacto.css">
+	<script src="validacionCampos.js"></script> 
+	 <%- include ('partials/head.html')%> 
+
+</head>
+<body>
+	<%- include ('partials/navigation.html')%>
+	<form action="enviar.php" method="post">
+		<h2>CONTACTO</h2>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre" ><br>
+		<input type="mail"  id="correo" name="correo" placeholder="Correo" ><br>
+		<input type="text"  id="telefono" name="telefono" placeholder="Telefono" ><br>
+		<textarea name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje"></textarea ><br>
+		<input type="submit" value="ENVIAR" id="boton" onsubmit="return validaCampos()">
+	</form>
+	<?php
+	include("enviar.php");
+	?>
+</body>
+</html>
